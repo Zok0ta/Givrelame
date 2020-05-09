@@ -1,0 +1,26 @@
+{
+  "name": "0.0.1",
+  "version": "0.0.1",
+  "description": "Bot pour la guerre territorial",
+  "main": "main.js",
+  "script": {
+    "test": "echo \"Error: no test spécified\" && exit 1"
+  },
+  "autor": "Zokota",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "/Join"
+  },
+  "repository": {
+    "type": "git",
+    "url": "s"
+  },
+  "keywords": [
+    "lih"
+  ],
+  "author": ""
+}
