@@ -6,7 +6,7 @@ const colours = require("./colours.json")
  
 bot.commands = new Discord.Collection();
 
-bot.login(config.token);
+bot.login(process.env.TOKEN);
 
 fs.readdir("./commande/", (err, files) => {
     if(err) console.log(err);
