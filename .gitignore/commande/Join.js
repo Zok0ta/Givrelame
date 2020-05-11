@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
     else {
     await aMember.roles.add(role.id).catch(console.error);
     
-    message.channel.send("Le rôle t'a été affecté " +`${aMember}, un @enroleur va te prendre en charge ^^`);
+    message.channel.send("Le rôle t'a été affecté " +`${aMember}, un @Moderateur va te prendre en charge ^^`);
     }
 }
 
