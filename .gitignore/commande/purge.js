@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     if (args[0] > 99) return message.channel.send("Il y a trop de messages a supprimer")
           message.delete();
     message.channel.bulkDelete(args[0]).then(() => {
-              .then(msg => msg.delete(6000))
+              then(msg => msg.delete(6000))
     })
 
 }
