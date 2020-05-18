@@ -4,10 +4,10 @@ module.exports.run = async (bot, message, args) => {
     if (!args[0]) return message.channel.send("Il faut spécifier le nombre de message a supprimer")
 
     if (args[0] > 99) return message.channel.send("Il y a trop de messages a supprimer")
-         message.channel.
-    message.channel.bulkDelete(args[0]).then(() => {
-         message.delete();
+          message.delete();
+    message.channel.bulkDelete(args[0]).then(() => {    
               .then(msg => msg.delete(6000))
+    
     })
 
 }
