@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     if(aMember.roles.cache.has(role.id)) return message.channel.send("Vous avez déja le role ambassadeur")
     else {
     await aMember.roles.add(role.id).catch(console.error);
-    // Logs: légat: <@&671882659689136168>
+    let légat = message.guild.roles.cache.find(r => r.name == "Ambassadeur");
     // Logs: Tribun: <@&671882885527240719>
     message.channel.send("Le rôle t'a été affecté  " +`${aMember}, le `+ `${légat}` + "ou le " + `${légat}`+" va te prendre en charge ^^ v2");
     }
