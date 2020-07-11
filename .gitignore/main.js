@@ -48,9 +48,12 @@ bot.on("guildMemberAdd", member => {
 
     let newEmbed = new Discord.MessageEmbed()
 
-            .setTitle(`Bienvenu chez Givrelame`)
-            .addField("* - *","Si tu es ici pour te faire recruter : /Join ")
-            .addField("* - *","Si tu es ici en tant qu'ambassadeur : /Ambassadeur")
-            .setColor('RANDOM')
+                .setTitle(`Bienvenue chez Givrelame`)
+                .setAuthor('Givrelame', 'https://cdn.discordapp.com/attachments/689447634355617868/728997445060657192/2.png')            
+                .setColor('RANDOM')
+                .addFields(
+                    { name: 'Tu souhaites nous rejoindre ?', value: "Tape donc /Join et je te laisse t'installer dans le channel Recrutement" , inline: true },
+                    { name: "Tu es ici en tant qu'ambassadeur ?" , value: "Tape donc /Ambassadeur et la direction te prendre en charge", inline: true },
+                )
     member.guild.channels.cache.get("671890685967859733").send(newEmbed)
 });
