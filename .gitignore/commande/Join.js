@@ -1,7 +1,6 @@
 const Discord = require("discord.js")
 const colours = require("../colours.json")
 
-
 module.exports.run = async (bot, message, args) => {
     message.delete();
     let aMember = message.guild.member(message.author);
@@ -16,6 +15,5 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-    name : "join",
     name : "Join"
 }
