@@ -15,7 +15,12 @@ module.exports.run = async (bot, message, args) => {
             { name: "Comment s'incrire" , value: "Présent :white_check_mark:  Absent :x:  Retard :rabbit:  Incertains :question:", inline: true },
         )
             
-        message.channel.send(aEmbed)
+        message.channel.send(aEmbed).then { async msg =>{
+            await msg.react(":white_check_mark:");
+            await msg.react(":x:");
+            await msg.react(":rabbit:");
+            await msg.react(":question:");
+        }}
     } 
     else 
         message.channel.send("Erreur dans la commande (Exemple pour l'utiliser : /gt [jour de la semaine] [nombre du mois] [année], tout cela séparer par des espaces")
