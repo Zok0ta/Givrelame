@@ -4,7 +4,7 @@ const colours = require("../colours.json")
 module.exports.run = async (bot, message, args) => {
     message.delete();
     let aMember = message.guild.member(message.author);
-    let role = message.guild.roles.cache.find(r => r.name == "Recrutement");
+    let role = message.guild.roles.cache.find(r => r.name == "Tribun");
     let Recruteur = message.guild.roles.cache.find(r => r.name == "Recruteur");
     if(aMember.roles.cache.has(role.id)) return message.channel.send("Vous avez déja ce role")
     else {
